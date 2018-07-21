@@ -33,5 +33,8 @@ MongoClient.connect(url,{ useNewUrlParser: true }, (err, client) => {
     console.log(result);
   });
 
+  //Testing
+  console.log('Credential check');
+
   //client.close();
 });
