@@ -12,7 +12,7 @@ const todos = [{
 
 beforeEach((done) =>{
   Todo.remove({}).then(() => {
-    Todo.insertMany(todos);
+    return Todo.insertMany(todos);
 
   }).then(() => done());
 });

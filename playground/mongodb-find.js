@@ -10,8 +10,15 @@ MongoClient.connect(url,{ useNewUrlParser: true }, (err, client) => {
   console.log('Connected to Mongo DB Server');
   const db = client.db('TodoApp');
 
+  // db.collection('Todos').find().toArray().then((docs)=>{
+  //   console.log('Todos');
+  //   console.log(JSON.stringify(docs, undefined, 2));
+  // },(err) => {
+  //   console.log('Unable to fetch');
+  // });
+
   // db.collection('Todos').find({
-  //     _id: new ObjectID('5b525c66493f8e817cfe89e1')
+  //     _id: new ObjectID('5b55001b9ac90801940d860d')
   //   }).toArray().then((docs) => {
   //   console.log('Todos');
   //   console.log(JSON.stringify(docs, undefined, 2));
@@ -25,11 +32,11 @@ MongoClient.connect(url,{ useNewUrlParser: true }, (err, client) => {
   //   console.log('Unable to fetch Todos', err);
   // });
 
-  db.collection('Users').find({name: "Saif Ahmed"}).toArray().then((docs)=>{
-    console.log("Users");
-    console.log(JSON.stringify(docs, undefined, 2));
-  },(err) => {
-    console.log("Unable to fetch Users", err);
-  });
+  // db.collection('Users').find({name: "Saif Ahmed"}).toArray().then((docs)=>{
+  //   console.log("Users");
+  //   console.log(JSON.stringify(docs, undefined, 2));
+  // },(err) => {
+  //   console.log("Unable to fetch Users", err);
+  // });
   //client.close();
 });

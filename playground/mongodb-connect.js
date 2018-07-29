@@ -30,6 +30,6 @@ MongoClient.connect(url,{ useNewUrlParser: true }, (err, client) => {
   //     return console.log('Unable to insert Users');
   //   }
   //   console.log(result.ops[0]._id.getTimestamp());
-  // })
+  // });
   client.close();
 });

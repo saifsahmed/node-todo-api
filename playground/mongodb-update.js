@@ -12,7 +12,7 @@ MongoClient.connect(url,{ useNewUrlParser: true }, (err, client) => {
 
   //updateOne
   // db.collection('Todos').findOneAndUpdate(
-  //   {_id: new ObjectID('5b527ccc8ebc2a817c6f970d')},
+  //   {_id: new ObjectID('5b550397f566eb1444bc6b94')},
   //   {$set:
   //     {completed: true}
   //   },
@@ -24,7 +24,7 @@ MongoClient.connect(url,{ useNewUrlParser: true }, (err, client) => {
 
   db.collection('Users').findOneAndUpdate(
     {
-      name: 'Sanjana'
+      name: 'Mike'
     },{
       $set : {
         name: 'Saif'
