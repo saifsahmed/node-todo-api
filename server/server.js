@@ -91,6 +91,7 @@ app.patch('/todos/:id', (req,res) => {
     }
 
     res.send({todo});
+    //console.log(res);
   }).catch((e) => {
     res.status(404).send();
   });
